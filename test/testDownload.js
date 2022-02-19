@@ -17,4 +17,9 @@ describe('test download', function() {
 
     assert.strictEqual(fs.existsSync(path.join(__dirname, `../lib/selenium-server-${version}.jar`)), true);
   });
+
+  it('tests the require path', function() {
+    const {path: filePath} = require('../index.js');
+    assert.strictEqual(filePath, path.join(__dirname, `../lib/selenium-server-${version}.jar`));
+  });
 })

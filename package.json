@@ -1,5 +1,8 @@
 {
   "name": "@nightwatch/selenium-server",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "3.141.59",
   "selenium": {
     "folder": "3.141.59"

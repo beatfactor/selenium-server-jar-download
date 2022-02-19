@@ -5,7 +5,6 @@ NPM install wrapper which makes available the selenium standalone server jar fil
 [![version][version-badge]][package]
 
 ## Installing Selenium 4
->>>>>>> e9e9fe420f547f16a91ea80eca320e95cad024b7
 This will download the jar file. 
 
 ```sh

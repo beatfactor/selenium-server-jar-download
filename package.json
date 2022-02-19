@@ -21,6 +21,15 @@
   ],
   "author": "Andrei Rusu",
   "license": "MIT",
+  "files": [
+    "lib",
+    "download.js",
+    "index.js",
+    "install.conf.js",
+    "install.js",
+    "README.md",
+    "LICENSE"
+  ],
   "dependencies": {
     "cli-progress": "^3.10.0",
     "download": "^8.0.0"

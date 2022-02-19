@@ -4,7 +4,8 @@ NPM install wrapper which makes available the selenium standalone server jar fil
 [![Build Status][build-badge]][build]
 [![version][version-badge]][package]
 
-# Installing
+## Installing Selenium 4
+>>>>>>> e9e9fe420f547f16a91ea80eca320e95cad024b7
 This will download the jar file. 
 
 ```sh
@@ -14,6 +15,13 @@ npm i @nightwatch/selenium-server
 Install a specific version, e.g. `4.1.1`:
 ```sh
 npm i @nightwatch/selenium-server@4.1.1
+```
+
+### Installing Selenium 3
+This will install the last Selenium 3 version: `3.150.0`
+
+```sh
+npm i @nightwatch/selenium-server@3
 ```
 
 # Usage

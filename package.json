@@ -5,7 +5,8 @@
   },
   "version": "3.141.59",
   "selenium": {
-    "folder": "3.141.59"
+    "folder": "3.141.59",
+    "filename": "selenium-server-standalone"
   },
   "description": "NPM install wrapper which makes available the selenium standalone server jar file in your node_modules folder.",
   "main": "index.js",

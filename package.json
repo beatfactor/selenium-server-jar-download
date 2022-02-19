@@ -3,9 +3,10 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "3.141.59",
+  "version": "3.150.0",
   "selenium": {
     "folder": "3.141.59",
+    "versionNumber": "3.141.59",
     "filename": "selenium-server-standalone"
   },
   "description": "NPM install wrapper which makes available the selenium standalone server jar file in your node_modules folder.",

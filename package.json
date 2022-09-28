@@ -3,9 +3,9 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "4.1.2",
+  "version": "4.5.0",
   "selenium": {
-    "folder": "4.1.0",
+    "folder": "4.5.0",
     "filename": "selenium-server"
   },
   "description": "NPM install wrapper which makes available the selenium standalone server jar file in your node_modules folder.",

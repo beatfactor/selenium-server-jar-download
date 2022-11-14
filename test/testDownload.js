@@ -13,6 +13,7 @@ describe('test download', function() {
   })
 
   it('tests the download', async function() {
+    this.timeout(3000);
     const download = require('../download.js');
     await download();
 

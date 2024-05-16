@@ -3,25 +3,25 @@ const path = require('path');
 const fs = require('fs');
 const packageInfo = require('../package.json');
 
-describe('test download', function() {
-  const {version, selenium} = packageInfo;
-  const {versionNumber = version} = selenium;
+describe('test download', function () {
+  const { version, selenium } = packageInfo;
+  const { versionNumber = version } = selenium;
 
-  it('tests the config', function() {
+  it('tests the config', function () {
     const config = require('../install.conf.js');
     assert.strictEqual(config.downloadUrl, `https://github.com/SeleniumHQ/selenium/releases/download/selenium-${selenium.folder}/${selenium.filename}-${versionNumber}.jar`);
   })
 
-  it('tests the download', async function() {
-    this.timeout(3000);
+  it('tests the download', async function () {
+    this.timeout(10000);
     const download = require('../download.js');
     await download();
 
     assert.strictEqual(fs.existsSync(path.join(__dirname, `../lib/${selenium.filename}-${versionNumber}.jar`)), true);
   });
 
-  it('tests the require path', function() {
-    const {path: filePath} = require('../index.js');
+  it('tests the require path', function () {
+    const { path: filePath } = require('../index.js');
     assert.strictEqual(filePath, path.join(__dirname, `../lib/${selenium.filename}-${versionNumber}.jar`));
   });
 })
